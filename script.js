@@ -98,13 +98,19 @@ const projects = [
   {
     title: '개인 개발자 포트폴리오 웹사이트', category: 'web', categoryLabel: 'Web',
     desc: '여러 페이지 구조로 제작한 개인 포트폴리오 웹사이트입니다.',
-    detail: 'HTML, CSS, JavaScript를 사용해 다크모드, 반응형 레이아웃, 프로젝트 필터, 모달창, 목표 저장 기능을 구현했습니다.',
+    detail: 'HTML, CSS, JavaScript를 사용해 다크모드, 반응형 레이아웃, 프로젝트 필터, 모달창, 목표 저장 기능을 구현했습니다. 긴 스크롤형이 아니라 Home, About, Experience, Projects, Roadmap, Contact로 페이지를 분리했습니다.',
     tech: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']
+  },
+  {
+    title: '크리스마스 웹사이트 제작', category: 'web', categoryLabel: 'Web',
+    desc: '친구들과 함께 크리스마스 분위기의 웹사이트를 제작한 경험입니다.',
+    detail: '색감, 문구, 화면 구성처럼 사용자가 느끼는 분위기를 고민하며 웹페이지를 만들었습니다. 웹사이트를 직접 꾸미고 구현하는 과정에서 웹 개발에 흥미를 느끼게 된 경험입니다.',
+    tech: ['HTML', 'CSS', 'Team Project', 'UI']
   },
   {
     title: '대학생 생활 도우미 웹사이트', category: 'web', categoryLabel: 'Web',
     desc: '대학생에게 필요한 공지, 과제, 일정 정보를 정리하는 웹서비스 기획 프로젝트입니다.',
-    detail: '사용자에게 필요한 정보를 카드형 UI로 정리하고, 실제 대학 생활에서 사용할 수 있는 기능을 중심으로 구성했습니다.',
+    detail: '사용자에게 필요한 정보를 카드형 UI로 정리하고, 실제 대학 생활에서 사용할 수 있는 기능을 중심으로 구성했습니다. 앞으로 공지, 과제, 일정 관리 기능을 더 발전시키고 싶습니다.',
     tech: ['HTML', 'CSS', 'JavaScript', 'UX']
   },
   {
@@ -120,24 +126,18 @@ const projects = [
     tech: ['Python', 'Data Science', 'Visualization']
   },
   {
+    title: '2025 창업 아이디어 경진대회', category: 'planning', categoryLabel: 'Planning',
+    desc: '팀 프로젝트로 참여해 제가 제안한 아이디어가 1차 합격한 경험입니다.',
+    detail: '고려대와 한신대가 주최한 2025 창업 아이디어 경진대회에 참여했습니다. 최종 결과는 참가상이었지만, 제가 낸 아이디어가 1차 합격했다는 점에서 아이디어 기획과 문제 발견 능력을 확인할 수 있었습니다.',
+    tech: ['Idea Planning', 'Teamwork', 'Presentation']
+  },
+  {
     title: 'AI 중국어 콘텐츠 아이디어 기획', category: 'ai', categoryLabel: 'AI',
     desc: 'AI를 활용해 한국과 중국의 언어와 문화를 연결하는 아이디어 프로젝트입니다.',
-    detail: '중국어 제목, 한국어 뜻, 대본, 자막, 스토리보드 생성 등 AI를 콘텐츠 제작 보조 도구로 활용하는 방향을 기획했습니다.',
+    detail: '중국어 제목, 한국어 뜻, 대본, 자막, 스토리보드 생성 등 AI를 콘텐츠 제작 보조 도구로 활용하는 방향을 기획했습니다. 장기적으로는 AI와 웹 기술을 연결한 서비스로 확장하고 싶습니다.',
     tech: ['AI Planning', 'Chinese', 'Prompt']
-  },
-  {
-    title: '학생회 문화국 MT 기획 경험', category: 'planning', categoryLabel: 'Planning',
-    desc: 'AI·SW 계열 MT를 기획하고 운영하는 학생회 문화국 활동 경험입니다.',
-    detail: '프로그램 구성, 일정, 역할 분담, 준비물, 현장 운영을 고려하며 여러 사람이 참여하는 행사를 책임감 있게 준비하고 있습니다.',
-    tech: ['Planning', 'Communication', 'Operation']
-  },
-  {
-    title: '전교회장 선거 홍보 기획', category: 'planning', categoryLabel: 'Planning',
-    desc: '피켓, 공약 구성, 홍보 영상 제작을 전반적으로 도운 기획 경험입니다.',
-    detail: '영상 편집과 시각적 구성 능력을 활용해 공약이 잘 전달되도록 만들었고, 이후 개발자로서 UI와 정보 전달을 고민하는 계기가 되었습니다.',
-    tech: ['Content Planning', 'Video Editing', 'Design']
   }
-];
+]
 
 const projectGrid = document.getElementById('projectGrid');
 const filterButtons = document.querySelectorAll('.filter-btn');
