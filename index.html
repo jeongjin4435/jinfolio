@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jinfolio | 이정진 Portfolio</title>
+  <meta name="description" content="AI와 스토리텔링을 연결해 사람들에게 더 쉽고 재미있는 경험을 만들고 싶은 이정진의 인터랙티브 포트폴리오입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-progress" id="pageProgress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="Jinfolio Home">
+        <span class="logo-mark">J</span>
+        <span>Jinfolio</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#story" class="nav-link">Story</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#chinaLab" class="nav-link">AI Lab</a></li>
+        <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg-shape shape-one"></div>
+      <div class="hero-bg-shape shape-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">AI·SW Student · Data Science · Storytelling</p>
+          <h1>
+            AI로 이야기를 설계하는<br />
+            <span>크리에이티브 개발자</span>
+          </h1>
+          <p class="typing-line">
+            <span id="typingText"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-desc">
+            저는 AI와 스토리텔링을 연결해 사람들이 더 쉽고 재미있게 이해할 수 있는 경험을 만들고 싶은 이정진입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#story" class="btn btn-primary">나의 이야기 보기</a>
+            <a href="#projects" class="btn btn-outline">프로젝트 보기</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-1" aria-label="포트폴리오 요약 카드">
+          <div class="profile-orbit">
+            <div class="profile-circle">JIN</div>
+            <span class="orbit-item item-ai">AI</span>
+            <span class="orbit-item item-data">DATA</span>
+            <span class="orbit-item item-story">STORY</span>
+          </div>
+          <div class="quick-info">
+            <h2>이정진</h2>
+            <p>AI·SW / 데이터사이언스 관심</p>
+          </div>
+          <div class="mini-stats">
+            <div>
+              <strong>10K+</strong>
+              <span>콘텐츠 조회 경험</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>관심 축</span>
+            </div>
+            <div>
+              <strong>2026</strong>
+              <span>성장 로드맵</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>현재의 나를 소개합니다</h2>
+          <p>과거 이야기는 따로 풀고, 이 섹션에서는 지금 제가 어떤 방향으로 성장하고 싶은지 보여줍니다.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>기술을 쉽게 전달하는 사람</h3>
+            <p>
+              저는 AI·SW 분야를 배우며 데이터사이언스, 웹 개발, AI 활용 서비스에 관심을 가지고 있습니다.
+              기술을 단순히 기능으로만 사용하는 것보다, 사람들이 더 쉽고 재미있게 이해할 수 있는 형태로 풀어내는 일을 중요하게 생각합니다.
+            </p>
+          </article>
+          <article class="about-card reveal delay-1">
+            <h3>콘텐츠 감각을 가진 개발자 지망생</h3>
+            <p>
+              HTML, CSS, JavaScript로 웹사이트를 만들고, Java와 Python으로 프로그래밍 기초를 쌓고 있습니다.
+              정보가 보기 좋게 정리되고, 사용자가 자연스럽게 흥미를 느낄 수 있는 구성을 고민합니다.
+            </p>
+          </article>
+          <article class="about-card reveal delay-2">
+            <h3>AI와 중국어 콘텐츠의 연결</h3>
+            <p>
+              중국어와 중국 콘텐츠에도 관심이 있어, 장기적으로는 AI를 활용해 한국과 중국의 언어, 문화, 콘텐츠를 연결하는 프로젝트를 만들어보고 싶습니다.
+              저의 목표는 아이디어를 기획하고 기술로 구현해 의미 있는 경험을 제공하는 것입니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="story">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">My Story</p>
+          <h2>창작 경험에서 시작된 성장 과정</h2>
+          <p>영상 편집, 스토리 구성, 선거 기획 경험은 지금의 기획력과 표현력으로 이어졌습니다.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-year">초등학생</span>
+            <div class="timeline-content">
+              <h3>유튜브 채널 운영 시작</h3>
+              <p>처음에는 액체괴물 같은 간단한 영상을 올리기 위해 편집을 시작했습니다. 작은 호기심이 콘텐츠 제작의 출발점이 되었습니다.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">콘텐츠 확장</span>
+            <div class="timeline-content">
+              <h3>게임 영상으로 스토리형 콘텐츠 제작</h3>
+              <p>게임 장면을 활용해 드라마처럼 흐름이 있는 영상을 만들었고, 일부 영상은 조회수 1만 회 이상을 기록했습니다.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">고등학생</span>
+            <div class="timeline-content">
+              <h3>전교회장 선거 기획 지원</h3>
+              <p>친구의 선거를 도우며 피켓 디자인, 공약 구성, 홍보 방향, 선거 영상 제작까지 전반적으로 참여했습니다.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">현재</span>
+            <div class="timeline-content">
+              <h3>AI·SW와 콘텐츠 감각 연결</h3>
+              <p>지금은 창작 경험을 AI, 데이터사이언스, 웹 개발과 연결해 더 많은 사람이 쉽게 이해하는 서비스를 만들고 싶습니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="strengths">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Strengths</p>
+          <h2>저의 강점</h2>
+          <p>기획부터 표현, 완성까지 이어지는 흐름을 강점으로 발전시키고 있습니다.</p>
+        </div>
+
+        <div class="strength-grid" id="strengthGrid">
+          <article class="strength-card reveal">
+            <span>01</span>
+            <h3>스토리 기획력</h3>
+            <p>보는 사람이 몰입할 수 있도록 장면과 흐름을 설계합니다.</p>
+          </article>
+          <article class="strength-card reveal delay-1">
+            <span>02</span>
+            <h3>콘텐츠 구성 능력</h3>
+            <p>영상, 자막, 화면 구성을 활용해 메시지를 분명하게 전달합니다.</p>
+          </article>
+          <article class="strength-card reveal delay-2">
+            <span>03</span>
+            <h3>시각적 표현 감각</h3>
+            <p>정보를 보기 좋게 정리하고 눈에 들어오게 꾸미는 데 강점이 있습니다.</p>
+          </article>
+          <article class="strength-card reveal">
+            <span>04</span>
+            <h3>집중력과 몰입</h3>
+            <p>하나에 몰입하면 끝까지 파고들며 결과물로 완성하려고 합니다.</p>
+          </article>
+          <article class="strength-card reveal delay-1">
+            <span>05</span>
+            <h3>실행력</h3>
+            <p>아이디어를 머릿속에만 두지 않고 실제 결과물로 만들어냅니다.</p>
+          </article>
+          <article class="strength-card reveal delay-2">
+            <span>06</span>
+            <h3>AI 확장성</h3>
+            <p>AI 기술을 콘텐츠, 언어, 문화와 연결하는 방법을 고민합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>배우고 있는 기술과 역량</h2>
+          <p>개발 기술과 콘텐츠 역량을 함께 성장시키고 있습니다.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-percent="82">
+            <div class="skill-top"><span>HTML</span><strong>82%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="78">
+            <div class="skill-top"><span>CSS</span><strong>78%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="70">
+            <div class="skill-top"><span>JavaScript</span><strong>70%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="65">
+            <div class="skill-top"><span>Java</span><strong>65%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="62">
+            <div class="skill-top"><span>Python</span><strong>62%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="75">
+            <div class="skill-top"><span>GitHub</span><strong>75%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="68">
+            <div class="skill-top"><span>Data Science</span><strong>68%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="88">
+            <div class="skill-top"><span>Content Planning</span><strong>88%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="85">
+            <div class="skill-top"><span>Video Editing</span><strong>85%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-percent="60">
+            <div class="skill-top"><span>Chinese Content</span><strong>60%</strong></div>
+            <div class="skill-bar"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>프로젝트와 경험</h2>
+          <p>카드를 클릭하면 프로젝트 설명을 자세히 볼 수 있습니다.</p>
+        </div>
+
+        <div class="filter-buttons reveal" aria-label="프로젝트 필터">
+          <button class="filter-btn active" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="web">웹</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+          <button class="filter-btn" data-filter="ai">AI Content</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section ai-section" id="chinaLab">
+      <div class="container ai-grid">
+        <div class="ai-copy reveal">
+          <p class="eyebrow">AI × China Content Lab</p>
+          <h2>중국어 콘텐츠와 AI를 연결하는 실험실</h2>
+          <p>
+            중국어와 중국 콘텐츠에 대한 관심을 AI 활용 아이디어로 연결했습니다.
+            버튼을 누르면 한국과 중국 시청자를 연결할 수 있는 콘텐츠 기획안이 랜덤으로 생성됩니다.
+          </p>
+          <button class="btn btn-primary" id="generateIdeaBtn">콘텐츠 아이디어 생성하기</button>
+        </div>
+
+        <article class="idea-card reveal delay-1" id="ideaCard">
+          <span class="idea-badge">Random Idea</span>
+          <h3 id="ideaTopic">한국 대학생의 하루</h3>
+          <p><strong>중국어 제목</strong> <span id="ideaChinese">韩国大学生的一天</span></p>
+          <p><strong>한국어 뜻</strong> <span id="ideaMeaning">한국 대학생의 하루</span></p>
+          <p><strong>추천 형식</strong> <span id="ideaFormat">브이로그 숏폼</span></p>
+          <p><strong>AI 활용</strong> <span id="ideaAi">대본 작성, 자막 정리, 스토리보드 제작</span></p>
+          <p><strong>기대 효과</strong> <span id="ideaEffect">한국과 중국 시청자가 서로의 일상을 쉽게 이해할 수 있음</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Future Roadmap</p>
+          <h2>앞으로의 계획</h2>
+          <p>개발, 데이터, 중국어 콘텐츠를 함께 성장시키기 위한 로드맵입니다.</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card reveal">
+            <span class="roadmap-year">2026</span>
+            <h3>기초를 완성하는 해</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript 기초 완성</li>
+              <li>GitHub Pages 포트폴리오 배포</li>
+              <li>Java와 Python 기초 프로젝트 제작</li>
+              <li>SQLD 또는 ADsP 데이터 자격증 준비</li>
+              <li>중국어 콘텐츠 계정 기획 시작</li>
+            </ul>
+          </article>
+          <article class="roadmap-card reveal delay-1">
+            <span class="roadmap-year">2027</span>
+            <h3>프로젝트로 확장하는 해</h3>
+            <ul>
+              <li>데이터 분석 프로젝트 제작</li>
+              <li>AI API를 활용한 웹서비스 제작</li>
+              <li>중국어 숏폼 콘텐츠 제작</li>
+              <li>HSK 3급 또는 4급 도전</li>
+              <li>AI 영상 제작 툴로 스토리형 콘텐츠 실험</li>
+            </ul>
+          </article>
+          <article class="roadmap-card reveal delay-2">
+            <span class="roadmap-year">Long-term</span>
+            <h3>크리에이티브 개발자로 성장</h3>
+            <ul>
+              <li>AI와 콘텐츠를 결합한 서비스 만들기</li>
+              <li>한국과 중국의 문화와 언어를 연결하는 기획</li>
+              <li>데이터사이언스와 AI 기술 활용</li>
+              <li>스토리텔링과 디자인 감각을 살린 개발자 되기</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="goals">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Growth Goals</p>
+          <h2>성장 목표 관리</h2>
+          <p>직접 목표를 추가하고 완료 체크를 할 수 있습니다. 새로고침해도 저장됩니다.</p>
+        </div>
+
+        <div class="goal-app reveal">
+          <form class="goal-form" id="goalForm">
+            <input type="text" id="goalInput" placeholder="예: JavaScript 미니 프로젝트 완성하기" aria-label="성장 목표 입력" />
+            <button type="submit" class="btn btn-primary">목표 추가</button>
+          </form>
+          <div class="goal-progress-wrap">
+            <div class="goal-progress-info">
+              <span>완료율</span>
+              <strong id="goalPercent">0%</strong>
+            </div>
+            <div class="goal-progress-bar"><span id="goalProgressBar"></span></div>
+          </div>
+          <ul class="goal-list" id="goalList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>메시지 남기기</h2>
+          <p>실제 메일 전송은 없지만, 입력값 검사와 제출 완료 메시지를 통해 폼 기능을 구현했습니다.</p>
+          <div class="contact-note">
+            <strong>Portfolio Point</strong>
+            <span>폼 유효성 검사, DOM 조작, 이벤트 처리 기능이 들어간 섹션입니다.</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+          <label>
+            이름
+            <input type="text" id="contactName" placeholder="이름을 입력하세요" />
+          </label>
+          <label>
+            이메일
+            <input type="email" id="contactEmail" placeholder="example@email.com" />
+          </label>
+          <label>
+            메시지
+            <textarea id="contactMessage" rows="5" placeholder="메시지를 입력하세요"></textarea>
+          </label>
+          <p class="form-message" id="formMessage" role="status"></p>
+          <button type="submit" class="btn btn-primary">메시지 작성하기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Jinfolio. Built with HTML, CSS, JavaScript.</p>
+      <a href="#home">Back to Home</a>
+    </div>
+  </footer>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">↑</button>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="모달 닫기">×</button>
+      <span class="modal-tag" id="modalCategory">Project</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-tech" id="modalTech"></div>
+      <p class="modal-detail" id="modalDetail"></p>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
