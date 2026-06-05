@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | JIN:CODE</title>
+  <meta name="description" content="이정진 포트폴리오 연락 페이지입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-mark">J</span><span>JIN:CODE</span></a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="roadmap.html" class="nav-link">Roadmap</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><span id="themeIcon">🌙</span></button>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-title reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>연락하기</h1>
+      <p>폼 유효성 검사 기능을 적용한 연락 페이지입니다. 실제 이메일 전송 기능은 포함하지 않았습니다.</p>
+    </section>
+
+    <section class="contact-layout">
+      <aside class="contact-info reveal">
+        <h2>JIN:CODE</h2>
+        <p>개발자를 목표로 성장하는 AI·SW 학생 이정진의 포트폴리오입니다.</p>
+        <div class="contact-chip-wrap">
+          <span>Web Development</span>
+          <span>Data Science</span>
+          <span>AI Service</span>
+          <span>Student Council</span>
+        </div>
+      </aside>
+
+      <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+        <label>
+          이름
+          <input type="text" id="contactName" placeholder="이름을 입력하세요" />
+        </label>
+        <label>
+          이메일
+          <input type="email" id="contactEmail" placeholder="example@email.com" />
+        </label>
+        <label>
+          메시지
+          <textarea id="contactMessage" rows="6" placeholder="메시지를 입력하세요"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">메시지 작성하기</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

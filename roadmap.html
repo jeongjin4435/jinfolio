@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap | JIN:CODE</title>
+  <meta name="description" content="이정진의 자격증, 개발 공부, AI 활용 프로젝트 미래 계획입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="roadmap">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"><span class="logo-mark">J</span><span>JIN:CODE</span></a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="activities.html" class="nav-link">Activities</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="roadmap.html" class="nav-link active">Roadmap</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환"><span id="themeIcon">🌙</span></button>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-title reveal">
+      <p class="eyebrow">Future Roadmap</p>
+      <h1>앞으로의 개발 성장 계획</h1>
+      <p>자격증, 프로젝트, 중국어 관심사를 개발자 성장 방향과 연결해 정리했습니다.</p>
+    </section>
+
+    <section class="roadmap-grid reveal">
+      <article class="roadmap-card">
+        <span class="roadmap-year">2026</span>
+        <h2>기초를 단단하게 만드는 해</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript 기초 완성</li>
+          <li>GitHub Pages 포트폴리오 배포</li>
+          <li>Java와 Python 기초 프로젝트 제작</li>
+          <li>SQLD 또는 ADsP 같은 데이터 관련 자격증 준비</li>
+          <li>중국어 콘텐츠 계정 기획 시작</li>
+        </ul>
+      </article>
+      <article class="roadmap-card">
+        <span class="roadmap-year">2027</span>
+        <h2>프로젝트를 확장하는 해</h2>
+        <ul>
+          <li>데이터 분석 프로젝트 제작</li>
+          <li>AI API를 활용한 웹서비스 제작</li>
+          <li>중국어 숏폼 콘텐츠 제작 실험</li>
+          <li>HSK 3급 또는 4급 도전</li>
+          <li>AI 영상 제작 툴을 활용한 스토리형 콘텐츠 실험</li>
+        </ul>
+      </article>
+      <article class="roadmap-card long-term">
+        <span class="roadmap-year">Long Term</span>
+        <h2>장기 목표</h2>
+        <ul>
+          <li>AI와 콘텐츠를 결합한 서비스 만들기</li>
+          <li>한국과 중국의 문화와 언어를 연결하는 프로젝트 기획</li>
+          <li>데이터사이언스와 AI 기술을 활용하는 개발자로 성장</li>
+          <li>기획력과 UI 구성력을 갖춘 실무형 개발자 되기</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="content-block reveal">
+      <div class="section-heading left">
+        <p class="eyebrow">Growth Goals</p>
+        <h2>직접 관리하는 성장 목표</h2>
+        <p>목표를 입력하면 localStorage에 저장되어 새로고침해도 유지됩니다.</p>
+      </div>
+      <div class="goal-app">
+        <form class="goal-form" id="goalForm">
+          <input type="text" id="goalInput" placeholder="예: Java 기초 문법 복습하기" aria-label="성장 목표 입력" />
+          <button class="btn btn-primary" type="submit">목표 추가</button>
+        </form>
+        <div class="goal-progress">
+          <div class="goal-progress-head">
+            <strong>완료율</strong>
+            <span id="goalPercent">0%</span>
+          </div>
+          <div class="progress-track"><span id="goalProgressBar"></span></div>
+        </div>
+        <ul class="goal-list" id="goalList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <button class="top-btn" id="topBtn" aria-label="맨 위로 이동">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
